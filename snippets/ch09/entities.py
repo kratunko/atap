@@ -7,7 +7,8 @@ from operator import itemgetter
 
 from reader import PickledCorpusReader
 
-nlp = spacy.load('en')
+# nlp = spacy.load('en')
+nlp = spacy.load("en_core_web_sm")
 
 GOOD_ENTS = ['PERSON', 'NORP', 'FACILITY', 'ORG', 'GPE', 'LOC',
              'PRODUCT', 'EVENT', 'WORK_OF_ART', 'LANGUAGE']
